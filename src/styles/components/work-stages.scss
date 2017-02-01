@@ -7,7 +7,6 @@
     position: relative;
     width: 180px;
     height: 180px;
-    border-radius: 50%;
     img {
       width: 60%;
       position: absolute;
@@ -18,13 +17,13 @@
     }
   }
   .pencil-icon {
-    background: #5094f2;
+    background-image: url("../assets/img/circle-blue.svg");
   }
   .display-icon {
-    background: #d94748;
+    background-image: url("../assets/img/circle-red.svg");
   }
   .basket-icon {
-    background: #ebbb11;
+    background-image: url("../assets/img/circle-yellow.svg");
   }
   .icon-definition {
     margin-top: 30px;
@@ -69,7 +68,7 @@
         padding: 0;
         margin-top: 37px;
         text-align: left;
-        line-height: 1.6vw;
+        line-height: 3.6vw;
         .icon-title {
           font-size: 5.5vw;
           margin-bottom: 15px;
@@ -85,8 +84,8 @@
 @media (max-width: 479px) {
   .work-stages {
     .stage-icon {
-      width: 100px;
-      height: 100px;
+      width: 80px;
+      height: 80px;
     }
     .work-stages-item .icon-definition {
       margin-top: 10px;
