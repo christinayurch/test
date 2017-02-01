@@ -3,6 +3,7 @@
   background-size: cover;
   padding: 5px 0 11px;
   #slider {
+    display: none; /*slider become visible right before applying slider-plugin*/
     button {
       width: auto;
       height: auto;
@@ -44,7 +45,7 @@
         color: #fff;
         .teaser-title {
           font-size: 3.1vw;
-          font-weight: 300;
+          font-weight: 100;
           margin-bottom: 9px;
           white-space: nowrap;
         }
@@ -86,7 +87,13 @@
   }
 }
 
-@media (max-width: 992px) {
+.slick-list {
+  .slick-loading & {
+    background: #fff url("../assets/img/ajax-loader.gif") center center no-repeat !important;
+  }
+}
+
+@media (max-width: 991px) {
   .teaser {
     #slider {
       button {
@@ -116,14 +123,31 @@
             font-size: 3.4vw;
           }
           .teaser-button {
+            white-space: nowrap;
             font-size: 4.6vw;
-            padding: 11px;
+            padding: 3% 7%;
             margin-top: 26px;
             margin-left: 0;
             &:before {
               width: 32px;
               height: 32px;
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 479px) {
+  .teaser {
+    #slider .slider-item {
+      .teaser-content {
+        .teaser-button {
+          margin-top: 10px;
+          &:before {
+            width: 20px;
+            height: 20px;
           }
         }
       }

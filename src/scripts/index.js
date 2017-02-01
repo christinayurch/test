@@ -4,12 +4,12 @@ $( '.nav-icon' ).click(function(){
 });
 
 
-$('#slider').slick({
+$('#slider').show().slick({
     dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     adaptiveHeight: true,
-    /*autoplay: true,
-     autoplaySpeed: 3500*/
+    autoplay: true,
+    autoplaySpeed: 3500
 });
