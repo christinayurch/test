@@ -55,3 +55,12 @@
     }
   }
 }
+
+@media (max-width: 479px) {
+  .shop-cart {
+    padding: 25px 0;
+    .shop-cart-info {
+      margin: 0 10px;
+    }
+  }
+}
